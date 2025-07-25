@@ -7,8 +7,8 @@ import { Plus } from "lucide-react";
 import { title } from "process";
 
 export default function DashboardPage() {
-  const { user } = useClerk();
-  const createBoard = useBoards();
+  const { user } = useClerk()
+  const {createBoard} = useBoards();
 
   const handleCreateBoard = async () => {
     await createBoard({title: "New Board"})
